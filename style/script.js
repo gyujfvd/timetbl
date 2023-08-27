@@ -1,3 +1,6 @@
-let table_monday = document.querySelector('#monday > table');
-let button_add = document.querySelector('#monday > button');
-button_add.addEventListener(click)
+const tg = window.Telegram.WebApp;
+const userName = tg.initDataUnsafe.userName.first_name;
+
+let p = document.getElementById('0')
+
+p.textContent = userName
