@@ -1,12 +1,12 @@
 const tg = window.Telegram.WebApp;
-const userName = tg.initDataUnsafe.user.first_name;
+//const userName = tg.initDataUnsafe.user.first_name;
 
 const table = document.getElementById("ew");
 
 const tbody = document.querySelector("#Monday > table > tbody");
 
 const nametg = document.getElementById("nametg");
-nametg.textContent = `Hi, $(userName)`;
+//nametg.textContent = `Hi, $(userName)`;
 
 const button = document.getElementById('qw');
 
@@ -85,7 +85,5 @@ buttonsave.addEventListener("click", () => {
 
     data = JSON.stringify(data);
     tg.sendData(data);
-});g(document.getElementsByClassName('input'));
-
 });
 
